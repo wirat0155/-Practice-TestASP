@@ -1,0 +1,44 @@
+﻿@model EmployeeVM
+
+<div class="card w-100">
+    <div class="card-body">
+        <form method="POST" asp-action="Insert">
+            <input asp-for="Employee.Id" hidden />
+
+            <div class="mb-3">
+                <label asp-for="Employee.EmployeeCode" class="form-label"></label>
+                <input asp-for="Employee.EmployeeCode" class="form-control" />
+                <span asp-validation-for="Employee.EmployeeCode"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Employee.FirstName" class="form-label"></label>
+                <input asp-for="Employee.FirstName" class="form-control" />
+                <span asp-validation-for="Employee.FirstName"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Employee.LastName" class="form-label"></label>
+                <input asp-for="Employee.LastName" class="form-control" />
+                <span asp-validation-for="Employee.LastName"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Employee.DepartmentId" class="form-label"></label>
+                <select asp-for="Employee.DepartmentId" asp-items="@Model.Department_List" class="form-control">
+                    <option disabled selected>-เลือก-</option>
+                </select>
+                <span asp-validation-for="Employee.DepartmentId"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">บันทึก</button>
+            <a asp-action="Index" class="btn btn-danger">ยกเลิก</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

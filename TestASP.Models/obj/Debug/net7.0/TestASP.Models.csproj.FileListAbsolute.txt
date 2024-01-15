@@ -1,0 +1,14 @@
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\bin\Debug\net7.0\TestASP.Models.deps.json
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\bin\Debug\net7.0\TestASP.Models.runtimeconfig.json
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\bin\Debug\net7.0\TestASP.Models.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\bin\Debug\net7.0\TestASP.Models.pdb
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.csproj.AssemblyReference.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.AssemblyInfoInputs.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.AssemblyInfo.cs
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.csproj.CoreCompileInputs.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\refint\TestASP.Models.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.pdb
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\TestASP.Models.genruntimeconfig.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Models\obj\Debug\net7.0\ref\TestASP.Models.dll

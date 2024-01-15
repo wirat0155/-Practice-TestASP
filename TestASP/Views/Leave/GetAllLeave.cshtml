@@ -1,0 +1,92 @@
+﻿@model GetAllLeaveVM
+
+<div class="container-fluid">
+
+    <form method="POST" asp-action="GetAllLeave">
+        <div class="row">
+            <div class="col">
+                <label asp-for="EmployeeCode" class="form-label">รหัสพนักงาน</label>
+                <input asp-for="EmployeeCode" class="form-control" />
+            </div>
+            <div class="col">
+                <label asp-for="DepartmentName" class="form-label">แผนก</label>
+                <input asp-for="DepartmentName" type="text" class="form-control" />
+            </div>
+            <div class="col">
+                <label asp-for="From" class="form-label">ตั้งแต่วันที่</label>
+                <input asp-for="From" class="form-control" />
+            </div>
+            <div class="col">
+                <label asp-for="To" class="form-label">ถึงวันที่</label>
+                <input asp-for="To" class="form-control" />
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">ค้นหา</button>
+                <input type="reset" value="เคลียร์ค่า" class="btn">
+            </div>
+        </div>
+    </form>
+
+
+    <div class="row">
+        <div class="col-lg-12 d-flex align-items-strech">
+            <div class="card w-100">
+                <div class="card-body">
+                    <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                        <div>
+                            <h2 class="text-primary">
+                                ข้อมูลการลาทั้งหมด
+                            </h2>
+                        </div>
+                        @* <div>
+                            <a asp-controller="Leave" asp-action="DownloadExcel" class="btn btn-primary">
+                                Excel
+                            </a>
+                            <a asp-controller="Leave" asp-action="DownloadPdf" class="btn btn-primary">
+                                Pdf
+                            </a>
+                        </div> *@
+                    </div>
+                    <div>
+                        <table class="table display nowrap" id="tblData" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ลำดับที่</th>
+                                    <th>ชื่อจริง</th>
+                                    <th>นามสกุล</th>
+                                    <th>ชื่อแผนก</th>
+                                    <th>ประเภทการลา</th>
+                                    <th>ตั้งแต่วันที่</th>
+                                    <th>ถึงวันที่</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    var i = 0;
+                                }
+                                @foreach (var leave_record in @Model.LeaveList)
+                                {
+                                    i = i + 1;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@leave_record.Employee.FirstName</td>
+                                        <td>@leave_record.Employee.LastName</td>
+                                        <td>@leave_record.Employee.Department.Name</td>
+                                        <td>@leave_record.LeaveType.Name</td>
+                                        <td>@leave_record.From</td>
+                                        <td>@leave_record.To</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/datatable.js"></script>
+}

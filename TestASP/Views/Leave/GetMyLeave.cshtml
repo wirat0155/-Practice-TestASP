@@ -1,0 +1,55 @@
+﻿@model IEnumerable<LeaveRecord>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 d-flex align-items-strech">
+            <div class="card w-100">
+                <div class="card-body">
+                    <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                        <div>
+                            <h2 class="text-primary">
+                                ข้อมูลการลาของฉัน
+                            </h2>
+                        </div>
+                        <div>
+                            <a asp-controller="Leave" asp-action="AddLeave" class="btn btn-primary">
+                                ทำเรื่องลา
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table display nowrap" id="tblData" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ลำดับที่</th>
+                                    <th>ประเภทการลา</th>
+                                    <th>วันที่เริ่มต้น</th>
+                                    <th>วันที่สิ้นสุด</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    var i = 0;
+                                }
+                                @foreach (var leave_record in @Model)
+                                {
+                                    i = i + 1;
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@leave_record.LeaveType.Name</td>
+                                        <td>@leave_record.From</td>
+                                        <td>@leave_record.To</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/datatable.js"></script>
+}

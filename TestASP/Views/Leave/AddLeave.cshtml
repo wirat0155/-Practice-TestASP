@@ -1,0 +1,37 @@
+﻿@model LeaveVM
+
+<div class="card w-100">
+    <div class="card-body">
+        <form method="POST" asp-action="AddLeave">
+
+            <div class="mb-3">
+                <label asp-for="LeaveRecord.From" class="form-label"></label>
+                <input asp-for="LeaveRecord.From" class="form-control" />
+                <span asp-validation-for="LeaveRecord.From"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LeaveRecord.To" class="form-label"></label>
+                <input asp-for="LeaveRecord.To" class="form-control" />
+                <span asp-validation-for="LeaveRecord.To"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LeaveRecord.LeaveTypeId" class="form-label"></label>
+                <select asp-for="LeaveRecord.LeaveTypeId" asp-items="@Model.Leave_Type_List" class="form-control">
+                    <option disabled selected>-เลือก-</option>
+                </select>
+                <span asp-validation-for="LeaveRecord.LeaveTypeId"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">บันทึก</button>
+            <a asp-action="Index" class="btn btn-danger">ยกเลิก</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

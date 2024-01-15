@@ -1,0 +1,14 @@
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\bin\Debug\net7.0\TestASP.Utility.deps.json
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\bin\Debug\net7.0\TestASP.Utility.runtimeconfig.json
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\bin\Debug\net7.0\TestASP.Utility.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\bin\Debug\net7.0\TestASP.Utility.pdb
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.csproj.AssemblyReference.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.AssemblyInfoInputs.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.AssemblyInfo.cs
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.csproj.CoreCompileInputs.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\refint\TestASP.Utility.dll
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.pdb
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\TestASP.Utility.genruntimeconfig.cache
+C:\Users\sunne\source\repos\TestASP\TestASP.Utility\obj\Debug\net7.0\ref\TestASP.Utility.dll
